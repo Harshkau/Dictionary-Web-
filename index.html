@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link class="icon" rel="icon" href="https://static.vecteezy.com/system/resources/previews/028/754/407/original/dictionary-3d-icon-illustration-png.png">
     <title>Dictionary App</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            background-color: #f4f4f4;
+            background-color: rgb(204, 205, 206);
             padding-top: 60px; /* For fixed header */
         }
 
@@ -38,6 +39,7 @@
             padding: 10px;
             border-radius: 5px;
             cursor: pointer;
+            margin-right: 20px;
         }
 
         .navbar button:hover {
@@ -164,7 +166,7 @@
                 const partOfSpeechElement = document.createElement('h3');
                 partOfSpeechElement.textContent = partOfSpeech;
                 resultDiv.appendChild(partOfSpeechElement);
-                gsap.from(partOfSpeechElement, { opacity: 0, y: -20, duration: 0.5 });
+                gsap.from(partOfSpeechElement, { opacity: 0, y: -20, duration: 0.9 });
 
                 definitions.forEach(def => {
                     const definitionElement = document.createElement('div');
